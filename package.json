@@ -1,0 +1,28 @@
+{
+  "name": "@carloscortezcloud/tiderag",
+  "version": "0.1.0",
+  "description": "TideRAG — CF-native RAG pipeline ($0/mo). Vectorize + Workers AI + D1.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit"
+  },
+  "keywords": ["rag", "cloudflare", "vectorize", "workers-ai", "embeddings", "retrieval"],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/breakingthecloud/tiderag"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240718.0",
+    "typescript": "^5.5.0"
+  }
+}
